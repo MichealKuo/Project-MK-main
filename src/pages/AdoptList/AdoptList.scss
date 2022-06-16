@@ -1,0 +1,310 @@
+// @import '~bootstrap/scss/bootstrap.scss';
+
+/* banner style */
+.MKbanner {
+  margin-top: 1rem;
+  display: flex;
+}
+.MKbanner-left {
+  flex: 6;
+  height: 450px;
+}
+.MKbanner-left > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 275px 275px 0;
+}
+.MKbanner-right {
+  flex: 4;
+  background: linear-gradient(to right, rgba(244, 244, 244, 0.4) 20%, #e5e5e5);
+  border-radius: 275px 0 0 275px;
+  position: relative;
+}
+.MKbanner-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.MKbanner-text > p {
+  font-size: 1rem;
+  // font-weight: medium;
+  text-align: end;
+  color: #646464;
+}
+.MKbanner-text > h2 {
+  text-align: end;
+}
+/* RWD-banner */
+.MKRWD-banner {
+  display: none;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  letter-spacing: px;
+}
+.MKrwd-banner-text > p {
+  font-size: 1.5rem;
+  font-weight: medium;
+}
+.MKrwd-banner-text > h5 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* adopt filter */
+.MKrowFilter {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  justify-content: center;
+}
+.MKfilter {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 2.5%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5df4d;
+  border-radius: 90px;
+  flex-wrap: wrap;
+  min-height: 4rem;
+}
+.MKselector > p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.MKselector > select {
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  /* needed */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.MKselector > select:focus {
+  outline: none;
+}
+
+.MKad-filter {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 150px;
+}
+
+/* list  cards  */
+
+.MKALrow-list {
+  width: 80%;
+  margin: 0 auto;
+}
+.MKALlist {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  display: flex;
+}
+.MKDisplayLi {
+  margin: 0 auto;
+  align-content: center;
+  align-items: center;
+}
+
+.MKALcard {
+  // min-width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.MKALcard-context:hover {
+  // transform: scale(1.03);
+  box-shadow: 1px 2px 15px rgba(94, 91, 91, 0.646);
+  transition: 0.5s;
+}
+
+.MKALcard-context {
+  border: 1px solid rgb(234, 234, 234);
+  padding: 5px;
+  box-shadow: 1px 2px 10px rgba(94, 91, 91, 0.126);
+  border-radius: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+.MKALavatar {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+.MKALCardImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+// .MKALCardImg:hover {
+//   transform: scale(1.3);
+//   transition: 0.8s;
+
+// }
+.MKALcardContent {
+  padding: 1rem;
+}
+.MKALcard-title {
+  font-size: 1rem;
+  font-weight: medium;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.MKALcard-text {
+  font-size: 0.9rem;
+  padding: 5px;
+  font-weight: 300;
+  width: 100%;
+  height: 100px;
+}
+/* button & hover */
+.MKALbutton {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 172px;
+  height: 35px;
+  border: 2px solid #f5df4d;
+  border-radius: 90px;
+  text-align: center;
+  background-color: #fff;
+  &:hover {
+    background-color: #f5df4d;
+    border-color: #fff;
+    color: white;
+  }
+
+  &:focus {
+    background-color: #f5df4d;
+    border-color: #fff;
+    color: white;
+  }
+
+  &:active {
+    background-color: #f5df4d;
+    border-color: #fff;
+    color: white;
+  }
+
+  &:visited {
+    background-color: #f5df4d;
+    border-color: #fff;
+    color: white;
+  }
+}
+// .MKALbutton:hover {
+//   background-color: #f5df4d;
+// }
+
+.MKALcard-btn {
+  background-color: transparent;
+  width: 100%;
+  height: 30px;
+  color: #646464;
+  border: none;
+  font-size: 1rem;
+  // position: relative;
+}
+.MKALcard-btn:hover {
+  color: #fff;
+}
+.MKpagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+/* pagination */
+.pagination .MKpage-link {
+  color: #646464;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.page-item.active .page-link {
+  background-color: #f5df4d;
+  border-color: transparent;
+}
+
+.MKpage-link:hover {
+  background-color: #f5df4d;
+  color: #fff;
+}
+
+/* RWD */
+
+@media screen and (max-width: 992px) {
+  .MKbanner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .MKbanner-left {
+    width: 100%;
+  }
+  .MKbanner-right {
+    display: none;
+  }
+  .MKfilter {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .MKad-filter {
+    width: 175px;
+  }
+  .MKselector {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .MKselector > p {
+    background-color: #f5df4d;
+    border-radius: 90px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin-right: 15px;
+    padding-top: 4px;
+    padding-left: 1px;
+  }
+  .MKRWD-banner {
+    display: block;
+    justify-content: center;
+  }
+  .MKselector > select {
+    border: 1px solid #f5df4d;
+    background-color: rgb(255, 255, 255);
+    border-radius: 90px;
+    /* needed */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .MKALrow-list {
+    width: 100%;
+  }
+}
