@@ -42,7 +42,7 @@ function AdoptList() {
   const handleGender = (e) => {
     setSelectGender(e.target.value)
   }
-  const filteredData = petList.filter((item) => {
+  const filteredData = petList?.filter((item) => {
     return Object.values(item)
       .join('')
       .includes(selectType + selectLocation + selectGender)
@@ -170,7 +170,7 @@ function AdoptList() {
           <div className="MKALrow-list">
             <div className="MKALlist">
               {selectType || selectGender || selectLocation === undefined
-                ? filteredData.map((v, i) => {
+                ? filteredData?.map((v, i) => {
                     return (
                       <p key={i} className="MKDisplayLi col-12 col-md-4">
                         <div className=" MKALcard ">
